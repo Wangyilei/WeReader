@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>确认登录页面</title>
+		<link href="http://at.alicdn.com/t/font_uh7x89hvyjozjjor.css" rel="stylesheet">
+		<script src="../js/zepto.min.js" type="application/javascript"></script>
+		<script src="../js/touch.js" type="application/javascript"></script>
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html{
+			font-size: 62.5%;
+			font-family: "微软雅黑";
+		}
+			.top-top{
+			position: absolute;
+			left: 35%;
+			top: 9%;
+			width: 33%;
+			height: 16%;
+			background: #31abfe;
+			border-top-left-radius: 23px;
+			border-top-right-radius: 23px;
+		}
+		.icon-weixing{
+			position: absolute;
+			left: 65%;
+			top: 62%;
+			font-size: 2.5rem;
+			color: #FFFFFF;
+		}
+		.empty1{
+			position: absolute;
+			left: 0%;
+			top: 100%;
+			width: 100%;
+			height: 20%;
+			background: #f8faf7;
+			border-bottom-left-radius: 23px;
+			border-bottom-right-radius: 23px;
+			border: 1px solid #f0f0f0;
+			box-sizing: border-box;
+		}
+		.empty2{
+			position: absolute;
+			left: 43%;
+			top: 95%;
+			width: 0;
+			height: 0;
+			border: 10px solid #31ABFE;
+			border-color: #31ABFE transparent transparent transparent;
+		}
+		.letter{
+			position: absolute;
+			left: 36%;
+			top: 30%;
+			font-size: 2.5rem;
+		}
+		.line{
+			position: absolute;
+			left: 12%;
+			top: 40%;
+			width: 80%;
+			height: 2px;
+			background: #ebebeb;
+		}
+		section h3{
+			position: absolute;
+			top: 45%;
+			left: 11%;
+		}
+		
+		section ul{
+			position: absolute;
+			top: 50%;
+			left: 16%;
+			color: #b9b9b9
+		}
+		section ul li{
+			margin-bottom: 4px;
+		}
+		footer{
+			width: 78%;
+			height: 3%;
+			border-radius: 5px;
+			background: #04be01;
+			text-align: center;
+			padding: 8px 0;
+			position: absolute;
+			top: 61%;
+			left: 11%;
+		}
+		footer a{
+			text-decoration: none;
+			color: #FFFFFF;
+		}
+		.weixing{
+			width: 100%;
+			height: 100%;
+			display: none;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<header>
+				<div class="top-top">
+					<i class="icon iconfont icon-weixing"></i>
+					<div class="empty1"></div>
+					<div class="empty2"></div>
+				</div>
+				<div class="letter">微信读书</div>
+				<div class="line"></div>
+			</header>
+			<section>
+				<h3>登陆后该应用将获得以下权限</h3>
+				<ul>
+					<li>获得你的公开信息（昵称、头像等）</li>
+					<li>寻找与你共同使用该应用的好友</li>
+				</ul>
+			</section>
+			<footer id="foot">
+				<a href="javascript:;">确认登录</a>
+			</footer>
+		</div>
+		<div class="changePage">
+			<img class="weixing" src="../img/3.jpg">
+		</div>
+	</body>
+	<script>
+
+		function changePage(){
+			touch.on( '#foot', "touchend", function(){
+				$( '.weixing' ).css( 'display', 'block' );
+				$( '#box' ).css( 'display', 'none' );
+				setTimeout(function(){
+					location.href = '';
+				},3000)
+			} )
+			
+		}
+		changePage();
+	</script>
+</html>
