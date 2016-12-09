@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>我</title>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_yogl8kfqngagiudi.css"/>
+		
+		<style>
+			*{margin:0;padding: 0}
+    		html{
+	    		font-size:62.5% ;
+	    		background-color:#edecec ;
+    		}
+    		li{
+    			list-style-type: none;
+    		}
+    		header{
+    			text-align: center;
+    			background-color:#FFFFFF;
+    			margin-bottom:1rem ;
+    			overflow-x: hidden;
+    		}   		
+    		.header{
+	    		width: 100%;
+	    		font-size:1rem ;
+    		}
+    		.headertop{
+    			width: 100%;
+    			padding:1rem 1rem 0 1rem;
+    			overflow-x: hidden;
+    			
+    		}
+    		.headertop li{
+    			float:left ;
+    			font-size:1.8rem ;
+    		}
+    		.headertop .tu{
+    			color:#07b1ec ;
+    		}
+    		.headertop .word{
+    			font-weight:bold ;
+    			margin-left: 30%;
+    			margin-right: 30%;
+    		}
+    		
+    		.headerbottom{
+    			clear:both;
+    			width:100% ;
+    			padding-top:1.5rem ;
+    			padding-bottom:1.5rem ;
+    			overflow-x: hidden;
+    		}
+    		
+    		.headerbottom img{
+    			border-radius:50% ;
+    			height: 5rem;
+    			width:5rem ;
+    			padding-bottom:1rem ;
+    		}
+    		.headerbottom p{
+    			color:lightslategray;
+    			padding-top:0.5rem ;
+    			padding-bottom:1rem ;
+    		}
+    		section{
+    			width: 100%;
+    			/*padding-left:1rem ;*/
+    			background-color:#FFFFFF ;
+    			overflow-x: hidden;
+    		}
+    		.sectiontop{
+    			
+    			border-top:1px solid gainsboro;
+    			border-bottom:1px solid gainsboro;
+    			
+    		}
+    		.news{
+    			margin-left:1rem ;
+    			width:100% ;
+    			border-bottom:1px solid gainsboro  ;
+    			padding-top:0.8rem ;
+    			padding-bottom:1.2rem ;
+    		}
+    		.news span{
+    			font-size:1.5rem ; 
+    		}
+    		.news .rr{
+    			color:red ;
+    			font-size:2.5rem ; 
+    		}
+    		.news .scrite{
+    			display: inline-block;
+    			/*padding-left:60% ;*/
+    			position:absolute ;
+    			right:1rem ;
+    			text-align: right;
+    		}
+    		.scrite p{
+    			font-size:1rem ; 
+    			color: #444444;
+    		}
+    		.scrite b{
+    			font-size:1rem ;
+    			font-weight:normal ;
+    			color: #555555;
+    		}
+    		.newfriend{
+    			border:0 ;
+    		}
+    		.news .friend{
+    			color:orange ;
+    			font-size:2.5rem ; 
+    		}
+    		.sectionbottom{
+    			margin-top: 1rem;
+    			border-top:1px solid gainsboro;
+    			border-bottom:1px solid gainsboro;
+    			background-color:#FFFFFF ;
+    			overflow-x: hidden;
+    			
+    		}
+    		.sectionbottom .newfriend1{
+    			border-bottom:1px solid gainsboro;
+    			
+    		}
+    		.sectionbottom .gz{
+    			color:greenyellow ;
+    			font-size:2.5rem ; 
+    		}
+    		.sectionbottom .bj{
+    			color:dodgerblue ;
+    			font-size:2.5rem ; 
+    		}
+    		.sectionbottom .sd{
+    			color:royalblue ;
+    			font-size:2.5rem ; 
+    		}
+    		.sectionbottom .newslast{
+    			border: none;
+    		}
+    		.footer{
+    		background-color:#ffffff ;
+    		overflow-x: hidden;
+    	}
+    	.footerdh{
+    		width:100% ;
+    		display: flex;
+    		padding-top:0.5rem ;
+    		padding-bottom:0.2rem;
+    		position:fixed ;
+    		bottom: 0;
+    		border-top:1px solid gainsboro;
+    		background-color:#ffffff ;
+    		overflow-x: hidden;
+    	}
+    	.footerdh li{
+    		flex:1;
+    		text-align:center ;
+    	}
+    	.footerdh li p{
+    		color:#4274dc ;
+    		font-size:2rem ;
+    	}
+    	
+    	.footerdh li span{
+    		font-size:0.8rem ;
+    		color: lightslategray;
+    	}
+
+    		
+		</style>
+	</head>
+	<body>
+		<header>
+			<ul class="headertop clearfix">
+				<li class="iconfont icon-xinxi tu"></li>
+				<li class="word">微读小分队</li>
+				<li class="iconfont icon-shezhi tu"></li>
+			</ul>
+			<div class="headerbottom">
+				<img src="../img/headphoto.jpg"  />
+				<p>编辑个人资料</p>
+			</div>
+		</header>
+		<section>
+			<div class="sectiontop">
+				<div class="news">
+					<span class="iconfont icon-zhanghumingxi rr"></span>
+					<span>账户</span>
+					<div class="scrite">
+						<p>98</p>
+						<b>已购9本书</b>
+					</div>
+				</div>
+				<div class="news newfriend">
+					<span class="iconfont icon-paimingshouru friend"></span>
+					<span>好友排名</span>
+					<div class="scrite">
+						<p>第6名</p>
+						<b>2小时27分钟</b>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<div class="sectionbottom">
+				<div class="news">
+					<span class="iconfont icon-follow gz"></span>
+					<span>关注</span>
+					<div class="scrite">
+						<p>66人关注我</p>
+						<b>已关注58人</b>
+					</div>
+				</div>
+				<div class="news newfriend1">
+					<span class="iconfont icon-biji bj"></span>
+					<span>笔记</span>
+					<div class="scrite">
+						<p>10本</p>
+						<b>58个赞78个评论</b>
+					</div>
+				</div>
+				<div class="news newslast">
+					<span class="iconfont icon-mulu sd"></span>
+					<span>书单</span>
+					<div class="scrite">
+						<p>109</p>
+					</div>
+				</div>
+			</div>
+			<footer>
+		<ul class="footerdh">
+			<li calss="footerpic">
+				<p class="iconfont icon-faxian1"></p>
+				<span>发现</span>
+			</li>
+			<li calss="footerpic">
+				<p class="iconfont icon-shujiaxuanzhong"></p>
+				<span>书架</span>
+			</li>
+			<li calss="footerpic">
+				<p class="iconfont icon-xiangfadengguang"></p>
+				<span>想法</span>
+			</li>
+			<li calss="footerpic">
+				<p class="iconfont icon-myinfor01"></p>
+				<span>我</span>
+			</li>
+		</ul>
+		
+	</footer>
+	</body>
+</html>

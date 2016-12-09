@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>发现</title>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_yogl8kfqngagiudi.css"/>
+    <link href="http://cdn.bootcss.com/Swiper/3.4.0/css/swiper.css" rel="stylesheet">
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="http://cdn.bootcss.com/Swiper/3.3.1/js/swiper.min.js"></script>
+    <style>
+    /*此处是公共部分*/
+    	*{margin:0;padding: 0}
+    	html{
+    		font-size:62.5% ;
+    		background-color:#edecec ;
+    	}
+    	section{
+    		background-color:#FFFFFF ;
+    		width:90% ;
+    		margin:0 auto ;
+    	}
+    	li{
+    		list-style-type: none;
+    	}
+    	.header{
+    		width: 100%;
+    		font-size:1rem ;
+    		text-align: center;
+    		background-color:#edecec;
+    		padding-top:5px ;
+    		padding-bottom:5px ;
+    	}
+    	.swiper-container{
+    		width:100% ;
+    		
+    		
+    	}
+    	.swiper-wrapper{
+    		width:100% ;
+    		
+    	}
+    	.swiper-slide {
+    		width:100% ;
+    		text-align: center;
+    		padding-top:5rem ;
+    		padding-bottom: 2rem;
+    	}
+    	.swiper-slide h3{
+    		font-size:2rem ;
+    		padding-top:0.5rem ;
+    		padding-bottom:0.5rem ;
+    	}
+    	.swiper-slide h5{
+    		font-size:1rem ;
+    		font-weight:normal ;
+    		/*padding-top:0.5rem ;*/
+    		padding-bottom:0.5rem ;
+    	}
+    	.swiper-slide img{
+    		height:20rem ;
+    		width:15rem ;
+    	}
+    	.swiper-slide p{
+    		font-size:0.1rem;
+    		color:#778899 ;
+    		padding-top:0.5rem ;
+    		padding-bottom:1rem ;
+		
+    	}
+    	.swiper-slide .me{
+    		color:#778899 ;
+    	}
+    	.swiper-slide .count{
+    		color:#778899 ;
+    		font-size:0.1rem;
+    	}
+    	.swiper-slide .readers img{
+    		border-radius:50% ;
+    		height:3rem ;
+    		width:3rem ;
+    		margin-top: 10rem;
+    	}
+ 
+    	/*此处是尾部*/
+    	
+    	.footer{
+    		background-color:#ffffff ;
+    	}
+    	.footerdh{
+    		width:100% ;
+    		display: flex;
+    		padding-top:0.5rem ;
+    		padding-bottom:0.2rem;
+    		position:fixed ;
+    		bottom: 0;
+    		border-top:1px solid gainsboro;
+    		background-color:#ffffff ;
+    	}
+    	.footerdh li{
+    		flex:1;
+    		text-align:center ;
+    	}
+    	.footerdh li p{
+    		color:#4274dc ;
+    		font-size:2rem ;
+    	}
+    	
+    	.footerdh li span{
+    		font-size:0.8rem ;
+    		color: lightslategray;
+    	}
+    	
+    </style>
+</head>
+<body>
+	<!--此处是表头-->
+	<header>
+		<h3 class="header">发现</h3>
+	</header>
+	<!--此处是主页内容-->
+	<section>
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<img src="../img/book1.jpg" />
+		        	<h3>白夜行</h3>
+		        	<h5>东野圭吾</h5>
+		        	<div class="readers">
+		        		<img src="../img/head1.jpg"/>
+		        		<img src="../img/head2.jpg"/>
+		        	</div>
+		        	<p>2位好友在读</p>
+		        	<span class="iconfont icon-myinfor01 me"></span>
+		        	<span class="count">2806</span>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="../img/book2.jpg" />
+		        	<h3>托梅教授的植物图谱</h3>
+		        	<h5>托梅</h5>
+		        	<div class="readers">
+		        		<img src="../img/head1.jpg"/>
+		        	</div>
+		        	<p>2位好友在读</p>
+		        	<span class="iconfont icon-myinfor01 me"></span>
+		        	<span class="count">2806</span>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="../img/book3.jpg" />
+		        	<h3>三体</h3>
+		        	<h5>刘慈欣</h5>
+		        	<div class="readers">
+		        		<img src="../img/head1.jpg"/>
+		        	</div>
+		        	<p>2位好友在读</p>
+		        	<span class="iconfont icon-myinfor01 me"></span>
+		        	<span class="count">2806</span>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="../img/book4.jpg" />
+		        	<h3>灼热</h3>
+		        	<h5>锦瑟</h5>
+		        	<div class="readers">
+		        		<img src="../img/head1.jpg"/>
+		        	</div>
+		        	<p>2位好友在读</p>
+		        	<span class="iconfont icon-myinfor01 me"></span>
+		        	<span class="count">2806</span>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="../img/book5.jpg" />
+		        	<h3>抉择</h3>
+		        	<h5>张平</h5>
+		        	<div class="readers">
+		        		<img src="../img/head1.jpg"/>
+		        	</div>
+		        	<p>2位好友在读</p>
+		        	<span class="iconfont icon-myinfor01 me"></span>
+		        	<span class="count">2806</span>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="../img/book6.jpg" />
+		        	<h3>革命之夏</h3>
+		        	<h5>约瑟夫·J.埃利斯（Joseph J.Ellis）</h5>
+		        	<div class="readers">
+		        		<img src="../img/head1.jpg"/>
+		        	</div>
+		        	<p>2位好友在读</p>
+		        	<span class="iconfont icon-myinfor01 me"></span>
+		        	<span class="count">2806</span>
+		        </div>
+		    </div>
+		<div>
+	</section>
+	<footer>
+		<ul class="footerdh">
+			<li calss="footerpic">
+				<p class="iconfont icon-faxian1"></p>
+				<span>发现</span>
+			</li>
+			<li calss="footerpic">
+				<p class="iconfont icon-shujiaxuanzhong"></p>
+				<span>书架</span>
+			</li>
+			<li calss="footerpic">
+				<p class="iconfont icon-xiangfadengguang"></p>
+				<span>想法</span>
+			</li>
+			<li calss="footerpic">
+				<p class="iconfont icon-myinfor01"></p>
+				<span>我</span>
+			</li>
+		</ul>
+		
+	</footer>
+	<script>        
+  	var mySwiper = new Swiper ('.swiper-container', {
+    direction: "horizontal",
+    loop: true,
+//	autoplay: 1000,
+	 
+	paginationClickable: true,
+	autoplayDisableOnInteraction:false
+	
+  })  
+//$(".swiper-wrapper").stop().animate({
+//	"height":"620px",
+//	"margin-top":"-10px"
+//},false)
+  </script>
+</body>
+</html>
