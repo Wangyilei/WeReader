@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: "微软雅黑";
+}
+ul,
+li {
+  list-style-type: none;
+}
+img {
+  border: 0;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  height: 100%;
+  width: 94%;
+  padding: 0 3%;
+  display: flex;
+  flex-flow: column;
+}
+.clearfix:after {
+  content: " ";
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+header {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  padding: 1rem 0;
+}
+header .header-left {
+  flex: 4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+header .header-left .search {
+  outline: none;
+  border: 0;
+  color: #919096;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+  width: 40%;
+}
+.closeThis{
+	text-decoration: none;
+	color: #0087f7;
+	font-size: 1.6rem;
+}
+header .closebtn {
+  flex: 1;
+  text-align: center;
+  line-height: 2.4rem;
+}
+section {
+  width: 100%;
+  overflow: auto;
+  overflow: hidden;
+  flex: 1;
+}
+section .box {
+  width: 100%;
+}
+section .box .s-top {
+  width: 100%;
+  border-bottom: 1px solid #f3f3f3;
+}
+section .box .s-top h1 {
+  width: 100%;
+  font-size: 2rem;
+  padding: 2% 0;
+  color: #3a3b3d;
+}
+section .box .s-top .s-top-img {
+  float: left;
+  width: 100%;
+  height: 10%;
+}
+section .box .s-top .s-top-img img {
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+section .box .s-top .s-top-img img:nth-child(2) {
+  margin-right: 0;
+}
+section .box .s-top p {
+  width: 100%;
+  padding: 1% 0;
+  float: left;
+  font-size: 1.2rem;
+  color: #919096;
+}
+section .box .s-list {
+  width: 100%;
+  display: flex;
+  padding: 5% 0;
+  border-bottom: 1px solid #f3f3f3;
+}
+section .box .s-list p {
+  padding: 5% 0;
+  flex: 1;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-right: 1rem;
+  text-align: center;
+  border-radius: 5px;
+}
+section .box .s-list P:nth-child(1) {
+  background-color: #47a7fb;
+}
+section .box .s-list P:nth-child(2) {
+  background-color: #fb7961;
+}
+section .box .s-list P:nth-child(3) {
+  background-color: #34d390;
+  margin-right: 0;
+}
+section .box .s-hotrecommend {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #f3f3f3;
+}
+section .box .s-hotrecommend h1 {
+  width: 100%;
+  font-size: 2rem;
+  padding: 2% 0;
+  color: #3a3b3d;
+  float: left;
+}
+section .box .s-hotrecommend .booklist1 {
+  width: 100%;
+  float: left;
+}
+section .box .s-hotrecommend .booklist1 .book1 {
+  overflow: hidden;
+  width: 23%;
+  margin-bottom: 2%;
+  float: left;
+  margin-right: 2%;
+}
+section .box .s-hotrecommend .booklist1 .book1 img {
+  float: left;
+  width: 100%;
+  height: 93px;
+}
+section .box .s-hotrecommend .booklist1 .book1 p {
+  line-height: 1.2rem;
+  color: #3a3b3d;
+  float: left;
+  width: 100%;
+  margin-top: 5%;
+  font-size: 0.8rem;
+  min-height: 2.4rem;
+}
+section .box .s-hotrecommend .booklist1 .book1 span {
+  line-height: 1rem;
+  float: left;
+  color: #919096;
+  width: 100%;
+  margin: 5% 0;
+}
+section .box .s-hotrecommend .booklist1 .book1:nth-child(4n) {
+  margin-right: 0;
+}
+section .box .s-hotrecommend em {
+  width: 100%;
+  color: #919096;
+  padding: 1% 0;
+  float: left;
+  font-style: normal;
+}
+section .box .s-freetime {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #f3f3f3;
+}
+section .box .s-freetime h1 {
+  width: 100%;
+  font-size: 2rem;
+  padding: 2% 0;
+  color: #3a3b3d;
+  float: left;
+}
+section .box .s-freetime .booklist2 {
+  width: 100%;
+  float: left;
+}
+
+section .box .s-freetime .booklist2 .book1 {
+  overflow: hidden;
+  width: 23%;
+  margin-bottom: 2%;
+  float: left;
+  margin-right: 2.3%;
+}
+
+section .box .s-freetime .booklist2 .book1 img {
+  float: left;
+  width: 100%;
+  height: 93px;
+}
+
+section .box .s-freetime .booklist2 .book1 p {
+  line-height: 1.2rem;
+  color: #3a3b3d;
+  float: left;
+  width: 100%;
+  margin-top: 5%;
+  min-height: 2.4rem;
+  font-size: 0.8rem;
+}
+
+section .box .s-freetime .booklist2 .book1 span {
+  line-height: 1rem;
+  float: left;
+  color: #919096;
+  width: 100%;
+  margin-top: 5%;
+}
+
+section .box .s-freetime .booklist2 .book1:nth-child(4n) {
+  margin-right: 0;
+}
+
+section .box .s-freetime em {
+  width: 100%;
+  color: #919096;
+  padding: 1% 0;
+  float: left;
+  font-style: normal;
+}
+
+section .box .classify {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+section .box .classify h1 {
+  width: 100%;
+  font-size: 2rem;
+  padding: 2% 0;
+  color: #3a3b3d;
+  float: left;
+}
+
+section .box .classify .category {
+  width: 100%;
+}
+
+section .box .classify .category img {
+  flex: 1;
+  margin-right: 4%;
+  width: 48%;
+  float: left;
+  margin-bottom: 4%;
+}
+
+section .box .classify .category img:nth-child(2n) {
+  margin-right: 0;
+}
+
+section .box .classify em {
+  width: 100%;
+  color: #919096;
+  padding: 1% 0;
+  float: left;
+  font-style: normal;
+}
+
+section .box .s-newbook {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+section .box .s-newbook h1 {
+  width: 100%;
+  font-size: 2rem;
+  padding: 2% 0;
+  color: #3a3b3d;
+  float: left;
+}
+
+section .box .s-newbook .booklist3 {
+  width: 100%;
+  float: left;
+}
+
+section .box .s-newbook .booklist3 .book1 {
+  overflow: hidden;
+  width: 23%;
+  float: left;
+  margin-right: 2.3%;
+  margin-bottom: 2%;
+}
+
+section .box .s-newbook .booklist3 .book1 img {
+  float: left;
+  width: 100%;
+  height: 93px;
+}
+
+section .box .s-newbook .booklist3 .book1 p {
+  line-height: 1.2rem;
+  color: #3a3b3d;
+  float: left;
+  width: 100%;
+  margin-top: 5%;
+  min-height: 2.4rem;
+  font-size: 0.8rem;
+}
+
+section .box .s-newbook .booklist3 .book1 span {
+  line-height: 1rem;
+  float: left;
+  color: #919096;
+  width: 100%;
+  margin-top: 5%;
+}
+
+section .box .s-newbook .booklist3 .book1:nth-child(4n) {
+  margin-right: 0;
+}
+
+section .box .s-newbook em {
+  width: 100%;
+  color: #919096;
+  padding: 1% 0;
+  float: left;
+  font-style: normal;
+}
+
+section .box .s-bargainPrice {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+section .box .s-bargainPrice h1 {
+  width: 100%;
+  font-size: 2rem;
+  padding: 2% 0;
+  color: #3a3b3d;
+  float: left;
+}
+
+section .box .s-bargainPrice .booklist4 {
+  width: 100%;
+  float: left;
+}
+
+section .box .s-bargainPrice .booklist4 .book1 {
+  overflow: hidden;
+  width: 23%;
+  float: left;
+  margin-bottom: 2%;
+  margin-right: 2.3%;
+}
+
+section .box .s-bargainPrice .booklist4 .book1 img {
+  float: left;
+  width: 100%;
+  height: 93px;
+}
+
+section .box .s-bargainPrice .booklist4 .book1 p {
+  line-height: 1.2rem;
+  color: #3a3b3d;
+  float: left;
+  width: 100%;
+  margin-top: 5%;
+  min-height: 2.4rem;
+  font-size: 0.8rem;
+}
+
+section .box .s-bargainPrice .booklist4 .book1 span {
+  line-height: 1rem;
+  float: left;
+  color: #919096;
+  width: 100%;
+  margin-top: 5%;
+}
+
+section .box .s-bargainPrice .booklist4 .book1:nth-child(4n) {
+  margin-right: 0;
+}
+
+section .box .s-bargainPrice em {
+  width: 100%;
+  color: #919096;
+  padding: 1% 0;
+  font-style: normal;
+  float: left;
+}

@@ -1,0 +1,65 @@
+@color: #31abfe;
+
+.all(){
+    margin: 0;
+    padding:0;
+}
+.html(){
+    font-size: 62.5%;
+}
+//---------------------------宽高
+.size( @width, @height ){
+    width: @width;
+    height: @height;
+}
+//--------------------------poaition absolute
+.abs( @left, @top ){
+    position: absolute;
+    left: @left;
+    top: @top;
+}
+//---------------------------圆角  top
+.radiu-t(){ 
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+     }
+//---------------------------圆角  bottom
+.radiu-b(){ 
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+     }
+     
+//------------------------------background
+.background( @bac ){
+    background: @bac
+}
+//--------------font-size
+
+.font-s( @size ){
+    font-size: @size;
+}
+//--------------------border-radius
+
+.border( @color ){
+    border: 1px solid @color;
+}
+
+//--------------padding
+.padding( @top, @bottom, @left, @right ){
+    padding-top: @top;
+    padding-bottom: @bottom;
+    padding-left: @left;
+    padding-right: @right;
+}
+
+
+
+
+
+
+
+
+
+
+
+

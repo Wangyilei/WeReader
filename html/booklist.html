@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="Description" content="telephone=no"/>
+		<meta name="Description" content="email=no">
+		
+		<title>booklist</title>
+		<link rel="stylesheet" href="../css/booklist.css" />		
+		<script src="../js/template.js"></script>
+		
+		<!--<script src="../js/zepto.js"></script>-->
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/iscroll.js"></script>
+		<script src="../js/booklist.js"></script>
+
+		
+	</head>
+	
+	<body >
+		<header class="clearfix">
+			<div class="header-left">
+				<input type="text" class="search" value = "搜索书城"/>
+			</div>
+			<span class="closebtn"><a href="bookshelf.html" class="closeThis">关闭</a></span>
+		</header>
+		
+		<section id="wraper">
+			<div class="box">
+				<!--热销专栏-->
+			<div class="s-top">
+				<h1 >推荐专题</h1>
+				<div class="s-top-img">
+					<img src="../img/b1.jpg" alt="" />
+					<img src="../img/b2.jpg" alt="" />
+				</div>
+				<p> 查看以往123期专题 ></p>
+			</div>
+			<!--榜单-->
+			<div class="s-list">
+				<p>免费榜</p>
+				<p>热读榜</p>
+				<p>新书榜</p>
+			</div>
+			
+			<!--热门推荐-->
+			<div class="s-hotrecommend ">
+				<h1 >热门推荐</h1>
+				<!--booklist-->
+				<div class="booklist1">
+					<!--引入模板-->
+				</div>
+				<em>查看剩余50本书 > </em>
+			</div>
+			
+			<!--限时免费-->
+			<div class="s-freetime clearfix">
+				<h1 >限时免费</h1>
+				<!--booklist-->
+				<div class="booklist2">
+					<!--引入模板-->
+				</div>
+				<em>查看剩余15本书 > </em>
+			</div>
+			
+			<!--分类-->
+			<div class="classify clearfix">
+				<h1>分类</h1>
+				<div class="category">
+					<img src="../img/b5.gif" alt="" />
+					<img src="../img/b6.gif" alt="" />
+					<img src="../img/b3.gif" alt="" />
+					<img src="../img/b4.gif" alt="" />
+				</div>
+				<em>查看全部51个分类> </em>
+			</div>
+			
+			<!--新书抢鲜-->
+			<div class="s-newbook clearfix">
+				<h1 >新书抢鲜</h1>
+				<!--booklist-->
+				<div class="booklist3">
+					<!--引入模板-->
+				</div>
+				<em>查看全部100本书 > </em>
+			</div>
+			
+			<!--限时特价-->
+			<div class="s-bargainPrice clearfix">
+				<h1 >限时特价</h1>
+				<!--booklist-->
+				<div class="booklist4">
+					<!--引入模板-->
+				</div>
+				<em>查看全部10本书 > </em>
+			</div>
+			</div>
+		</section>
+		
+		<script id="book" type="text/html">
+			{{each list as value i}}
+			<div class="book1" data-id = {{value.id}} >
+				<a href="detail.html?id={{value.id}}">
+				<img src="{{value.src}}" alt="" />
+				<p >{{value.info}}</p>
+				<span>{{value.autnor}}</span>
+				</a>
+			</div>
+			{{/each}}
+		</script>
+		<script>
+			
+		</script>
+	</body>
+
+</html>
+
+
+            

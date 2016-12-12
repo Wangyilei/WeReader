@@ -5,7 +5,8 @@
     	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<title>我</title>
 		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_yogl8kfqngagiudi.css"/>
-		
+		<script src="../js/zepto.min.js" type="application/javascript"></script>
+		<script src="../js/touch.js" type="application/javascript"></script>
 		<style>
 			*{margin:0;padding: 0}
     		html{
@@ -139,17 +140,22 @@
     		.sectionbottom .newslast{
     			border: none;
     		}
-    		.footer{
+    		footer{
+    		width: 100%;
     		background-color:#ffffff ;
     		overflow-x: hidden;
+    		position:fixed ;
+    		bottom: 0;
+    	}
+    	.footerdh .active{
+    		color:#4274dc;
     	}
     	.footerdh{
     		width:100% ;
     		display: flex;
     		padding-top:0.5rem ;
     		padding-bottom:0.2rem;
-    		position:fixed ;
-    		bottom: 0;
+    		
     		border-top:1px solid gainsboro;
     		background-color:#ffffff ;
     		overflow-x: hidden;
@@ -159,7 +165,7 @@
     		text-align:center ;
     	}
     	.footerdh li p{
-    		color:#4274dc ;
+    		color:#CCCCCC ;
     		font-size:2rem ;
     	}
     	
@@ -231,24 +237,49 @@
 			</div>
 			<footer>
 		<ul class="footerdh">
-			<li calss="footerpic">
-				<p class="iconfont icon-faxian1"></p>
+			<li calss="footerpic" id="f1">
+				<p class="iconfont icon-faxian1 "></p>
 				<span>发现</span>
 			</li>
-			<li calss="footerpic">
+			<li calss="footerpic" id="f2">
 				<p class="iconfont icon-shujiaxuanzhong"></p>
 				<span>书架</span>
 			</li>
-			<li calss="footerpic">
-				<p class="iconfont icon-xiangfadengguang"></p>
-				<span>想法</span>
-			</li>
-			<li calss="footerpic">
-				<p class="iconfont icon-myinfor01"></p>
+			<li calss="footerpic" id="f3">
+				<p class="iconfont icon-myinfor01 active"></p>
 				<span>我</span>
+			</li>
+			<li calss="footerpic" id="f4">
+				
+				<p class="iconfont icon-xiangfadengguang"></p>
+				<span>登录</span>
 			</li>
 		</ul>
 		
 	</footer>
+	<script>
+		$( '#f1' ).click(function(){
+			$( this ).children().addClass('active');
+			$( this ).siblings().children().removeClass('active');
+			location.href = 'find.html';
+		})
+		$( '#f2' ).click(function(){
+			$( this ).children().addClass('active');
+			$( this ).siblings().children().removeClass('active');
+			location.href = 'bookshelf.html';
+		})
+		$( '#f3' ).click(function(){
+			$( this ).children().addClass('active');
+			$( this ).siblings().children().removeClass('active');
+			location.href = 'me.html';
+		})
+		$( '#f4' ).click(function(){
+			$( this ).children().addClass('active');
+			$( this ).siblings().children().removeClass('active');
+			location.href = 'register.html';
+		})
+		
+	
+	</script>
 	</body>
 </html>
